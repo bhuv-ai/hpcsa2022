@@ -18,3 +18,4 @@ then
 else
         echo "The file $filename does not exist."
 fi
+echo "Enter file name"
