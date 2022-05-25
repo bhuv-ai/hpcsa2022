@@ -1,0 +1,20 @@
+echo "Enter file name "
+read filename
+if [ -f $filename ]
+then
+        echo "The file $filename exists."
+        if [ -r $filename ]
+        then
+    echo "The file has read permissions."
+ if [ -w $filename ]
+then
+                echo "The file has write permissions"
+   if [ -x $filename ]
+then
+     echo "The file has execute permissions"
+  fi
+  fi
+  fi
+else
+        echo "The file $filename does not exist."
+fi
